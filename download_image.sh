@@ -2,6 +2,12 @@
 set -uo pipefail
 
 case $1 in
+    "manjaro_arm")
+        url=https://github.com/manjaro-arm/generic-images/releases/download/23.02/Manjaro-ARM-minimal-generic-23.02.img.xz
+    ;;
+    "archlinux_arm")
+        url=http://os.archlinuxarm.org/os/ArchLinuxARM-rpi-aarch64-latest.tar.gz
+    ;;
     "raspbian_lite:latest")
         url=https://downloads.raspberrypi.org/raspbian_lite_latest
     ;;
